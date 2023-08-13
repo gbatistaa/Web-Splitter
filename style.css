@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url(./Fonts/SpaceMono-Regular.ttf);
+}
+@font-face {
+    font-family: 'Space Mono Bold';
+    src: url(./Fonts/SpaceMono-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Space Mono';
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(197, 228, 231);
+}
+#landing-title{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+#tip-card{
+    height: 26rem;
+    width: 55rem;
+    padding: 2rem;
+    display: flex;
+    column-count: 2;
+    column-gap: 2.5rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.div-tip{
+    width: 50%;
+}
+#div-tip2{
+    background-color: rgb(0, 73, 77);
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    column-count: 1;
+}
+#section-tip1, #section-tip2{
+    margin-bottom: 1.8rem;
+}
+.inputs-div1{
+    height: 2.6rem;
+    width: 100%;
+    padding: 0rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    color: rgb(0, 73, 77);
+    background-color: rgb(244, 250, 250);
+}
+p.input-label{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0.8rem;
+    color: rgb(127, 156, 159);
+}
+#bill-options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.7rem;    
+}
+.bill-options-element{
+    height: 2.7rem;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 73, 77);
+    outline-color: none;
+    cursor: pointer;
+    transition: 0.15s ease-out;
+}
+.bill-options-element:hover{
+    background-color: rgb(0, 91, 96);
+}
+#button15{
+    color: rgb(0, 73, 77);
+    background-color: rgb(38, 192, 171);
+    transition: 0.15s ease-out;
+}
+#custom-bill-input{
+    text-align: center;
+    color: rgb(0, 73, 77);
+    width: 90%;
+    cursor:auto;
+    background-color:rgb(244, 250, 250);
+}
+.tip-calculator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.div-aux{
+    font-weight: 600;
+}
+.div-aux p{
+    font-size: 14px;
+    color: rgb(244, 250, 250);
+}
+.div-aux span{
+    font-size: 12px;
+    color: rgb(127, 156, 159);
+}
+#tip-amount{
+    margin-bottom: 1rem;
+}
+#total-person{
+    margin-bottom: 5.6rem;
+}
+.price-amount{
+    font-family: 'Space Mono Bold';
+    font-size: 44px;
+    font-weight: 900;
+    color: rgb(38, 192, 171);
+}
+.price-amount::before{
+    content: '$';
+    color: rgb(38, 192, 171);
+}
+#reset-button{
+    height: 2.7rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Space Mono Bold';
+    color: rgb(0, 73, 77);
+    background-color: rgb(38, 192, 171);
+    cursor: pointer;
+    transition: 0.15s ease-out;
+}
+#reset-button:hover,#button15:hover{
+    background-color: rgb(38, 167, 149);
+}

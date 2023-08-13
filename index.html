@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="landing-title">SPLITTER</p>
+    <div id="tip-card">
+        <div class="div-tip" id="div-tip1">
+            <section class="section-tip" id="section-tip1">
+                <p id="bill-input-label" class="input-label">Bill</p>
+                <input type="text" name="bill" id="bill-input" class="inputs-div1" autocomplete="off">
+            </section>
+            <section class="section-tip" id="section-tip2">
+                <p class="input-label">Select Tip %</p>
+                <div id="bill-options">
+                    <button type="button" class="bill-options-element" id="button5">5%</button>
+                    <button type="button" class="bill-options-element" id="button10">10%</button>
+                    <button type="button" class="bill-options-element" id="button15">15%</button>
+                    <button type="button" class="bill-options-element" id="button25">25%</button>
+                    <button type="button" class="bill-options-element" id="button50">50%</button>
+                    <input type="text" name="Custom" id="custom-bill-input" placeholder="Custom" class="inputs-div1" autocomplete="off">
+                </div>
+            </section>
+            <section class="section-tip" id="section-tip3">
+                <p id="people-number" class="input-label">Number of People</p>
+                <input type="text" name="people" id="people-input" class="inputs-div1" autocomplete="off">
+            </section>
+        </div>
+        <div class="div-tip" id="div-tip2">
+            <div class="tip-calculator" id="tip-amount">
+                <section class="div-aux">
+                    <p>Tip Amount</p>
+                    <span>/person</span>
+                </section>
+                <p class="price-amount" id="tip-result">00.00</p>
+            </div>
+            <div class="tip-calculator" id="total-person">
+                <section class="div-aux">
+                    <p>Total</p>
+                    <span>/person</span>
+                </section>
+                <p class="price-amount" id="total-result">00.00</p>
+            </div>
+            <button type="reset" id="reset-button">RESET</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
